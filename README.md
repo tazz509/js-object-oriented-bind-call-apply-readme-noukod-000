@@ -112,7 +112,7 @@ newGreet('Bob')
 
 greet('Bob')
 // Hi Bob, my name is !
-```
+
 
 As you see from the above code, by calling `greet.bind(sally)` we return a new function that we then assign to the variable `newGreet`.  Invoking `newGreet` shows that the `this` object is bound to `sally`.  Note that the original `greet` function is unchanged, as shown by directly invoking our original `greet` function.  So `bind` does not change our original function.  Instead, it copies the function, and sets the copied function's `this` context to whatever is passed through as an argument to bind.  
 
